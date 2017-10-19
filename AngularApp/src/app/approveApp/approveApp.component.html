@@ -1,0 +1,46 @@
+
+
+<div class="container">
+    <h2>Godkänn appar</h2>
+    <h1>denna sida är till för företag att godkänna vilka appar som företagets reklam sak få visas på </h1>
+    <form #Data="ngForm">
+      <div class="form-group">
+        <label for="title">app</label>
+        <input type="text" class="form-control" id="app" required maxlength="30" [(ngModel)]="model.app" name="app" #app="ngModel">
+        <div *ngIf="app.errors && (app.dirty || app.touched)" class="alterApp alter-danger">
+          <div [hidden]="!app.errors.required">
+            <p class="error">app måste finnas</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="company">Företag</label>
+        <input type="text" class="form-control" id="company" required maxlength="30" [(ngModel)]="model.company" name="company" #company="ngModel">
+        <div *ngIf="company.errors && (company.dirty || company.touched)" class="alterCompany alter-danger">
+          <div [hidden]="!company.errors.required">
+            <p class="error">Företag måste finnas</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <button type="button" [disabled]="!Data.form.valid" class="btn btn-default" (click)="getSubmit()">lägg till godkänd app</button>
+      <br>
+      {{ gotData.content }}
+      <br>
+      <br>
+      <p>lista av appar som kan godkännas</p>
+      <li *ngFor="let app of arr.arr">
+        {{ app }}
+      </li>
+    </form>
+    <br>
+    <br>
+
+
+
+
+  </div>

@@ -1,0 +1,29 @@
+<div class="container">
+    <h2>Se hur många som tittat på din reklam</h2>
+    <form #Data="ngForm">
+      <div class="form-group">
+        <label for="name">Företag</label>
+        <input type="text" class="form-control" id="name" required maxlength="30" [(ngModel)]="model.name" name="name" #name="ngModel">
+        <div *ngIf="name.errors && (name.dirty || name.touched)" class="alterName alter-danger">
+          <div [hidden]="!name.errors.required">
+            <p class="error">namn måste finnas</p>
+          </div>
+        </div>
+      </div>
+
+      <button type="button" [disabled]="!Data.form.valid" class="btn btn-default" (click)="getSubmit()">lägg till godkänd app</button>
+
+      <br>
+      <br>
+      <p></p>
+      <li *ngFor="let app of arr.arr; let i = index">
+        id {{ i }} : antal visningar: {{ app }}
+      </li>
+    </form>
+    <br>
+    <br>
+
+
+
+
+  </div>
