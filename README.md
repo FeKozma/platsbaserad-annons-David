@@ -9,6 +9,8 @@ Jag som utvecklare har lagt ner ca 160 timmar på detta project vilket motsvarar
 Projectet har varit välldigt lärorikt då jag inte jobbat med mycket av det som ingår i projectet innan.
 Det tog ett tag innan jag lyckades lista ut hur alla programen fungerade och hur man kopplar samman de olika delarna. Vilket ledde till att den mästa märkbara framstegen gjorde jag de sista veckorna i projectet då de första veckorna gick åt att få allting att köra (hadde lite problem med eclips och maven) och förstå hur det skulle funka. 
 
+länk till min arbetsstatestik: https://photos.app.goo.gl/pvHsOWvg1KS5BQoJ2
+
 -------------------------------------
 # Java
 
