@@ -23,13 +23,13 @@ ex: http://localhost:8080/addad/15.591926/56.181154/500/Spotify/nagonText/20/200
 /addapp/{appname}/{company}
 ex:  http://localhost:8080/addapp/Spotify/google
 
-*lägga in att en app som godkänner att ett företag får lägga reklam på applikationen*
+*lägga in att en app godkänner att ett företag får lägga reklam på applikationen*
 
 
 /addcompany/{app}/{companyname}
 ex: http://localhost:8080/addcompany/Spotify/google
 
-*lägga in ett företag som godkänner att en app får vissa reklamen från företaget*
+*lägga in att ett företag godkänner att en app får vissa reklamen från företaget*
 
 
 /hello
