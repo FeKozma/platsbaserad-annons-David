@@ -15,6 +15,17 @@ länk till min arbetsstatestik: https://photos.app.goo.gl/pvHsOWvg1KS5BQoJ2
 -------------------------------------
 # Java
 
+starta Java servern
+Jag använde Eclips Jee oxygen vid start av java serven. för att starta serven i eclips behöver du
+1. öppna JavaAPI2 i eclipse
+2. högerklixka på projektet och tryck därefter på "Run as" >> "Maven build"
+3. i goals skriv in "package" tryck sedan på "Run"
+4. text bör dyka upp i eclise egna comandorads tolk
+5. högerklicka på projectet >>  "Proporties" >> "Run/Debug Settings" >>  "JavaAPI2Application" >> "Edit..." >> "Arguments" >> i fältet namngivet  "program arguments:" skriv in "server" >> "ok" >> "apply and close"
+6. högerklicka på projektet och välj "Run As" >> "Java Application" 
+7. i textfälltet namngivet "Select Type" skriv in "JavaAPI2" och tryck på resultatet som du får upp. "JavaAPI2Application"
+
+
 länkar och vad de gör
 
 /addad/{longitude}/{latitude}/{radius}/{company}/{summary}/{days}/{nrViews}/query
@@ -68,6 +79,15 @@ ex: http://localhost:8080/getcurnrviews/google
 -------------------------------------
 
 # Angular
+
+kör angular genom att följa nedanstående steg:
+1. instalera npm på din dator https://nodejs.org/en/
+2. gå till mappen "AngularApp" i cmd
+2. skriv in "npm install"
+3. "npm install -g @angular/cli"
+4. "ng serve"
+5. öppna webläsare och skriv in "localhost:4200" eller "0.0.0.0:4200"
+
 
 angular är programerad att nå servern på port 8080
 
